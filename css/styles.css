@@ -153,6 +153,14 @@ nav {
   background-color: #ccc;
 }
 
+.leaflet-touch .leaflet-bar a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+  font-size: 36px;
+}
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -187,7 +195,7 @@ nav {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 30px 15px 25px;
   text-align: center;
 }
 
@@ -197,8 +205,8 @@ nav {
   font-family: Arial, sans-serif;
   min-height: 380px;
   text-align: left;
-  width: 80%;
-  margin: 20px 10% 20px 10%;
+  width: 90%;
+  margin: 2.5% 5% 2.5% 5%;
 }
 
 #restaurants-list .restaurant-img {
@@ -237,7 +245,7 @@ nav {
   display: inline-block;
   font-size: 10pt;
   margin: 15px 0 0;
-  padding: 8px 30px 10px;
+  padding: 15px 30px 15px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
