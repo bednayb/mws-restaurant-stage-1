@@ -32,7 +32,7 @@ li {
 }
 
 a {
-  color: orange;
+  color: darkgreen;
   text-decoration: none;
 }
 
@@ -86,7 +86,7 @@ section {
 
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
   padding: 25px 20px;
@@ -94,11 +94,15 @@ section {
   text-transform: uppercase;
 }
 
+#footer a{
+  color: orange;
+}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
   height: 80px;
-  background-color: #252831;
+  background-color: darkgreen;
   text-align: center;
 }
 
@@ -179,7 +183,7 @@ nav {
 .filter-options {
   width: 100%;
   /* height: 50px; */
-  background-color: #3397DB;
+  background-color: darkgreen;
   align-items: center;
   padding: 10px 0px 10px 0px;
 }
@@ -232,7 +236,7 @@ nav {
 }
 
 #restaurants-list li h1 {
-  color: #f18200;
+  color: darkgreen;
   font-size: 20px;
   font-weight: bold;
   letter-spacing: 0;
@@ -251,7 +255,7 @@ nav {
 }
 
 #restaurants-list li a {
-  background-color: orange;
+  background-color: darkgreen;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -274,7 +278,7 @@ nav {
 }
 
 #restaurant-name {
-  color: #f18200;
+  color: darkgreen;
   font-family: Arial, sans-serif;
   font-size: 30px;
   font-weight: bold;
@@ -378,7 +382,7 @@ nav {
 }
 
 #review-rate {
-  background: orange;
+  background: darkgreen;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
