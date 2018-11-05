@@ -170,7 +170,7 @@ createRestaurantHTML = (restaurant) => {
   li.append(image);
 
   const infoContainer = document.createElement('div');
-  infoContainer.setAttribute("id", "restaurant-info-container");
+  infoContainer.setAttribute("class", "restaurant-info-container");
   li.append(infoContainer);
 
   name.innerHTML = restaurant.name;
