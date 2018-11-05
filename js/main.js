@@ -86,6 +86,10 @@ initMap = () => {
     id: 'mapbox.streets'
   }).addTo(newMap);
 
+  // set tabIndex to Zoom in/out at Maps
+  document.querySelector('.leaflet-control-zoom-in').tabIndex = 2;
+  document.querySelector('.leaflet-control-zoom-out').tabIndex = 3;
+
   updateRestaurants();
 }
 /* window.initMap = () => {
@@ -160,7 +164,6 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   const name = document.createElement('h1');
 
-
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   image.setAttribute("alt", restaurant.name);
@@ -196,11 +199,13 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   restaurants.forEach(restaurant => {
     // Add marker to the map
     const marker = DBHelper.mapMarkerForRestaurant(restaurant, self.newMap);
-    marker.on("click", onClick);
+    marker.on("dblclick", onClick);
 
     function onClick() {
       window.location.href = marker.options.url;
     }
+
+
     self.markers.push(marker);
   });
 
