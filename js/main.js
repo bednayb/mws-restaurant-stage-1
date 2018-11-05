@@ -59,7 +59,6 @@ fetchCuisines = () => {
  */
 fillCuisinesHTML = (cuisines = self.cuisines) => {
   const select = document.getElementById('cuisines-select');
-
   cuisines.forEach(cuisine => {
     const option = document.createElement('option');
     option.innerHTML = cuisine;
@@ -85,10 +84,6 @@ initMap = () => {
       'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     id: 'mapbox.streets'
   }).addTo(newMap);
-
-  // set tabIndex to Zoom in/out at Maps
-  document.querySelector('.leaflet-control-zoom-in').tabIndex = 2;
-  document.querySelector('.leaflet-control-zoom-out').tabIndex = 3;
 
   updateRestaurants();
 }
