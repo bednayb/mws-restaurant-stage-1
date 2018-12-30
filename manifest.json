@@ -9,7 +9,7 @@
     "description": "This is a udacity's project",
     "lang": "en-US",
     "icons": [{
-            "src": "images/icons/icon-72x72.png",
+            "src": "/images/icons/icon-72x72.png",
             "sizes": "72x72",
             "type": "image/png"
         },
